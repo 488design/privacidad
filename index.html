@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad – 488 Drive Rentable</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1b1f24; --muted:#5b6470; --accent:#0a7d6b; --line:#e3e6ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1316; --fg:#e8ecef; --muted:#9aa4ae; --accent:#3fd0b4; --line:#262d33; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--accent); }
+  li { margin: 4px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Política de privacidad de 488 Drive Rentable</h1>
+<p class="meta">Responsable: 488 Design · Contacto: <a href="mailto:Soporte.488drive@gmail.com">Soporte.488drive@gmail.com</a><br>
+Última actualización: 28 de octubre de 2026</p>
+
+<p>488 Drive Rentable es una app para conductores de Uber y DiDi. Lee en pantalla las ofertas de viaje que muestran esas apps y,
+con los valores que vos configurás (mínimo por kilómetro, combustible, zonas y radio de recogida), te muestra un semáforo que indica
+si la oferta conviene. También guarda en tu teléfono el historial de ofertas analizadas y, si lo usás, dónde dejaste tu vehículo.</p>
+
+<p><strong>En resumen:</strong> la app no tiene servidores propios, no te pide crear una cuenta, no muestra publicidad y no vende ni
+comparte tus datos. Todo lo que guarda queda en tu teléfono.</p>
+
+<h2>1. Lectura de pantalla de Uber y DiDi (servicio de accesibilidad)</h2>
+<p>Para que el semáforo funcione, la app usa el servicio de accesibilidad de Android para leer el texto que muestran Uber y DiDi
+<strong>solo mientras esas apps están en pantalla</strong>. De ese texto toma el precio de la oferta, las distancias y tiempos, y las
+direcciones de recogida y destino. También reconoce en qué etapa está el viaje (por ejemplo, si aceptaste la oferta o si se canceló)
+para que el historial sea correcto.</p>
+<ul>
+  <li>El servicio está limitado a las apps de conductor (Uber, DiDi y Cabify): no lee otras apps, ni mensajes, ni contraseñas, ni lo que escribís.</li>
+  <li>No realiza acciones por vos: no acepta ni rechaza viajes.</li>
+  <li>Lo leído se procesa en tu teléfono y no se envía a ningún servidor.</li>
+</ul>
+
+<h2>2. Captura de pantalla para leer DiDi</h2>
+<p>DiDi no deja leer sus ofertas como texto, así que la app usa la captura de pantalla de Android (te pide permiso, y Android muestra
+el aviso de que la pantalla se está capturando). Las imágenes se procesan <strong>en memoria, en tu teléfono</strong>, con el
+reconocimiento de texto de Google ML Kit, que funciona en el dispositivo. Las capturas <strong>nunca se guardan ni se envían</strong>:
+se descartan apenas se extrae el texto. La app solo procesa la captura cuando DiDi está en pantalla.</p>
+
+<h2>3. Ubicación (solo en "Mi Vehículo")</h2>
+<p>Si usás la función "Mi Vehículo", la app te pide permiso de ubicación para guardar dónde dejaste el vehículo y calcular la
+distancia hasta él. La ubicación se toma <strong>solo cuando vos tocás guardar</strong>, con la app abierta; nunca en segundo plano.
+Las coordenadas se guardan en tu teléfono. Para mostrarte la dirección, la app usa el servicio de direcciones (geocodificación) de
+Android, que puede consultar al proveedor de ese servicio en tu teléfono. Si tocás "Navegar", la ubicación se abre en la app de mapas
+que elijas.</p>
+
+<h2>4. Datos que se guardan en tu teléfono</h2>
+<table>
+  <tr><th>Dato</th><th>Para qué</th></tr>
+  <tr><td>Historial de ofertas: app (Uber o DiDi), fecha y hora, precio, distancias, tiempos, direcciones de recogida y destino, resultado del semáforo y si el viaje se tomó</td><td>Mostrarte tu historial y tus estadísticas</td></tr>
+  <tr><td>Gastos que cargues</td><td>Tus estadísticas de ganancias</td></tr>
+  <tr><td>Tu configuración (mínimos, combustible, zonas, radio, moneda, apariencia)</td><td>Calcular el semáforo</td></tr>
+  <tr><td>Ubicación del vehículo</td><td>"Mi Vehículo"</td></tr>
+</table>
+<p>Estos datos no salen de tu teléfono. No se incluyen en las copias de seguridad automáticas de Android.</p>
+
+<h2>5. Datos técnicos de Google ML Kit</h2>
+<p>El reconocimiento de texto de Google ML Kit puede enviar a Google información técnica de uso y rendimiento (por ejemplo, datos del
+dispositivo y de la app, métricas de rendimiento, configuración usada y códigos de error) para diagnóstico y estadísticas de uso. Según
+Google, esos datos se envían cifrados y no se comparten con terceros. Más información en la
+<a href="https://developers.google.com/ml-kit/android-data-disclosure">divulgación de datos de ML Kit</a>.</p>
+
+<h2>6. Si nos escribís</h2>
+<p>Algunas opciones de la app (por ejemplo, votar una función) abren tu app de correo con un mensaje para nosotros. Solo recibimos lo
+que vos decidas enviar, junto con tu dirección de correo, y lo usamos únicamente para responderte.</p>
+
+<h2>7. Lo que no hacemos</h2>
+<ul>
+  <li>No vendemos ni compartimos tus datos con terceros.</li>
+  <li>No usamos tus datos para publicidad.</li>
+  <li>No tenemos servidores que reciban tu historial, tu ubicación ni tus capturas.</li>
+</ul>
+
+<h2>8. Permisos que usa la app</h2>
+<ul>
+  <li><strong>Accesibilidad:</strong> leer las ofertas de Uber y DiDi (punto 1).</li>
+  <li><strong>Mostrar sobre otras apps:</strong> mostrar el semáforo encima de Uber y DiDi.</li>
+  <li><strong>Captura de pantalla:</strong> leer las ofertas de DiDi (punto 2).</li>
+  <li><strong>Ubicación:</strong> "Mi Vehículo" (punto 3).</li>
+  <li><strong>Notificaciones:</strong> el aviso de Android mientras la lectura de DiDi está activa.</li>
+</ul>
+<p>Podés quitar cualquiera de estos permisos cuando quieras desde los ajustes de Android o desde Configuración → Permisos en la app.
+Sin ellos, las funciones que dependen de cada uno dejan de funcionar.</p>
+
+<h2>9. Cómo borrar tus datos</h2>
+<p>Como todo queda en tu teléfono, podés borrarlo cuando quieras: desinstalando la app o, en los ajustes de Android, entrando a la app
+y eligiendo "Borrar datos".</p>
+
+<h2>10. Menores de edad</h2>
+<p>La app está pensada para conductores de plataformas de viaje, que deben ser mayores de edad. No está dirigida a menores.</p>
+
+<h2>11. Cambios en esta política</h2>
+<p>Si la política cambia, se publica en esta misma página con la nueva fecha de actualización.</p>
+
+<h2>12. Contacto</h2>
+<p>Para cualquier consulta sobre privacidad: <a href="mailto:Soporte.488drive@gmail.com">Soporte.488drive@gmail.com</a></p>
+
+</main>
+</body>
+</html>
